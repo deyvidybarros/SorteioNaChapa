@@ -1,0 +1,155 @@
+/* Fonte Padrão */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fde2e4;
+    color: #333;
+}
+
+/* Logo Centralizada e com Bordas Arredondadas */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 100px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botões padronizados */
+.btn-padrao {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.btn-outline-danger {
+    border: 2px solid #d63384;
+    color: #d63384;
+}
+
+.btn-outline-danger:hover {
+    background-color: #d63384;
+    color: white;
+}
+
+/* Caixas de texto arredondadas */
+.input-redondo {
+    border-radius: 30px;
+    border: 2px solid #d63384;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Navbar inferior fixa para mobile */
+.mobile-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    border-top: 2px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0 0;
+}
+
+.mobile-navbar a {
+    text-decoration: none;
+    color: #d63384;
+    text-align: center;
+    flex: 1;
+}
+
+.mobile-navbar i {
+    font-size: 20px;
+    display: block;
+}
+
+/* Popup de mensagem estilizado */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    display: none;
+}
+
+.popup.mostrar {
+    display: block;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin-bottom: 8px;
+}
+
+/* Garante que nome e telefone fiquem alinhados */
+.info-participante {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Faz com que ocupe todo o espaço disponível */
+}
+
+/* Estilização do telefone */
+.telefone {
+    /* font-size: 14px; */
+    color: #666;
+    /* display: flex; */
+    align-items: center;
+}
+
+/* Ícone de telefone alinhado */
+.telefone i {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+/* Botão da lixeira alinhado */
+.btn-lixeira {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Ajuste para garantir que as listas tenham um tamanho fixo e rolagem */
+.list-container {
+    max-height: 300px; /* Ajuste conforme necessário */
+    overflow-y: auto; /* Adiciona o scroll vertical */
+    padding-right: 5px; /* Evita que a barra de rolagem cubra o conteúdo */
+}
+
+/* Personaliza a barra de rolagem para uma aparência mais moderna */
+.list-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+    background-color: #d63384; /* Cor rosa pastel */
+    border-radius: 3px;
+}
+
+.list-container::-webkit-scrollbar-track {
+    background-color: #f8f9fa;
+}
